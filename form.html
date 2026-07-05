@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/form.css">
+</head>
+<body>
+    <section class="enquiry-section">
+
+    <div class="enquiry-container">
+
+        <div class="enquiry-info">
+
+            <span>Quick Enquiry</span>
+
+            <h2>Let's Discuss Your Next Opportunity</h2>
+
+            <p>
+                Whether you're looking for international commodities brokerage,
+                insurance solutions, or premium interior design services,
+                our team is ready to assist you.
+            </p>
+
+            <div class="contact-box">
+                <h4>Email</h4>
+                <p>info@mariapalmerenergy.com</p>
+            </div>
+
+            <div class="contact-box">
+                <h4>Phone</h4>
+                <p>+1 (718) 506 6964</p>
+            </div>
+
+            <div class="contact-box">
+                <h4>Location</h4>
+                <p>Fort Lauderdale, Florida, USA</p>
+            </div>
+
+            
+
+        </div>
+
+        <form id="enquiryForm" class="enquiry-form">
+
+            <h3>Send Us a Message</h3>
+
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Full Name">
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-group">
+                <input type="tel" id="phone" placeholder="Phone Number">
+            </div>
+
+            <div class="input-group">
+
+                <select id="service">
+                    <option value="">Select Service</option>
+                    <option>International Commodities Brokerage</option>
+                    <option>Life & Health Insurance</option>
+                    <option>Interior Design</option>
+                </select>
+
+            </div>
+
+            <div class="input-group">
+                <textarea id="message" rows="5" placeholder="Tell us about your enquiry..."></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn">
+                Send Enquiry
+            </button>
+
+            <p id="responseMessage"></p>
+
+        </form>
+
+    </div>
+
+    </div>
+    <a href="index.html" class="back-home">
+    ← Back to Home
+</a>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init({
+    publicKey: "BdqfxXykAiBo-3j4d",
+});
+</script>
+
+<script src="script/contact.js"></script>
+</section>
+</body>
+</html>

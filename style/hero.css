@@ -1,0 +1,46 @@
+/* ---------- hero ---------- */
+  #hero{
+    padding: 168px 0 120px;
+    display:flex; flex-direction:column; align-items: center;
+  }
+  .hero-grid{ display:grid; grid-template-columns: 1.05fr .95fr; gap:64px; align-items:center; }
+  .hero-title{
+    font-size: clamp(2.4rem, 4.6vw, 3.6rem);
+    font-weight:700; letter-spacing:-.01em; margin-bottom:26px; width:70%; text-align:center;
+
+  }
+  .hero-title .accent{ color: var(--blue); }
+  .hero-title .em{
+    background: linear-gradient(135deg, var(--gold), gold);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero-desc{ font-size: clamp(1rem, 1.4vw, 1.125rem); line-height:1.75; color:#4A5568; max-width:90%; margin-bottom:38px; margin-right: auto; margin-left: auto; text-align:justify; }
+  .hero-buttons{ display:flex; gap:18px; flex-wrap:wrap;justify-content: center; }
+  .hero-strip{ margin-top:56px; display:flex; gap:36px; flex-wrap:wrap;  justify-content: center; }
+  .hero-strip div{ font-family:'Playfair Display',serif; font-size:26px; font-weight:700; color: var(--navy); }
+  .hero-strip span{ display:block; font-family:'Inter',sans-serif; font-size:12px; font-weight:600; color:#718096; letter-spacing:.04em; text-transform:uppercase; margin-top:4px; }
+
+  .gallery{ display:flex;flex-direction: row; gap:28px; margin-top:64px; flex-wrap:wrap; justify-content:center;
+    }
+
+.gallery img{ height:300px;width: 400px; object-fit:cover; border-radius: var(--radius); 
+}
+  
+  /* ---------- about ---------- */
+  #about{ padding: 130px 0; }
+  .about-grid{ display:grid; grid-template-columns: .85fr 1.15fr; gap:72px; align-items:center; }
+  .about-visual{
+    position:relative; border-radius: var(--radius); overflow:hidden; height: 460px;
+    background: linear-gradient(160deg, var(--navy), var(--navy-soft) 55%, var(--blue));
+  }
+  .about-copy p{ font-size:16.5px; line-height:1.85; color:#4A5568; margin-bottom:20px; max-width:640px; }
+  .about-copy h2{ font-size: clamp(1.9rem, 3vw, 2.6rem); margin-bottom:26px; }
+  .about-copy p{
+    text-align:justify; text-justify:inter-word;
+  }
+  .stat-row{ display:flex; gap:44px; margin-top:36px; flex-wrap:wrap; }
+  .stat-row .stat b{ display:block; font-family:'Playfair Display',serif; font-size:32px; color: var(--navy); }
+  .stat-row .stat span{ font-size:12.5px; color:#718096; letter-spacing:.04em; text-transform:uppercase; font-weight:600; }
+  .about-visual img{
+    background-image: url(image/about.jpeg); width:100%; height:100%; object-fit:cover; border-radius: var(--radius);
+  }

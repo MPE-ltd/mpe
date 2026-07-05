@@ -1,0 +1,26 @@
+ /* ---------- responsive ---------- */
+  @media (max-width: 1024px){
+    .hero-grid{ grid-template-columns:1fr; }
+    .hero-art{ height:380px; order:-1; }
+    .about-grid{ grid-template-columns:1fr; }
+    .why-grid{ grid-template-columns:1fr; }
+    .about-visual, .why-visual{ height:340px; }
+    .services-grid{ grid-template-columns: 1fr 1fr; }
+    .footer-grid{ grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 860px){
+    .nav-links{ display:none; }
+    .nav-cta .btn-primary{ display:none; }
+    .hamburger{ display:flex; }
+  }
+  @media (max-width: 680px){
+    #hero{ padding:140px 0 80px; }
+    .services-grid{ grid-template-columns: 1fr; }
+    .footer-grid{ grid-template-columns: 1fr; gap:36px; }
+    .hero-buttons .btn, .hero-buttons{ width:100%; }
+    .hero-buttons .btn{ width:100%; }
+    .stat-row{ gap:28px; }
+    #about, #services, #why{ padding:90px 0; }
+    #cta{ padding:90px 0; }
+    .logo-row{ justify-content:center; gap:24px; }
+  }

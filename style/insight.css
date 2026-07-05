@@ -1,0 +1,278 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#2D3748;
+    color:#F5F7FA;
+}
+
+.insights-header{
+    padding: 10px 0 20px;
+    text-align:center;
+    
+}
+
+.insights-modal {padding: 100px 0 120px;
+    display:flex; flex-direction:column; align-items: center;
+    background: #7e8fab;
+}
+
+.container{
+    width:min(80%);
+    margin:auto;
+}
+
+.insights-hero{
+    padding:120px 0 80px;
+    text-align:center;
+    background:linear-gradient(180deg,#ffffff,#F5F7FA);
+}
+
+.insights-hero span{
+    color:#C8A24D;
+    font-size:14px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.insights-hero h1{
+    font-size:64px;
+    color:#F5F7FA;
+    margin:20px 0;
+}
+
+.insights-hero p{
+    max-width:750px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+    color: #c8c8c8;;
+}
+
+
+/* ===========================
+   CARDS
+=========================== */
+
+.insight-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+    gap:30px;
+    margin-bottom:100px;
+}
+
+.insight-card{
+    background:#fff;
+    padding:35px;
+    border-radius:24px;
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+    transition:.35s;
+}
+
+.insight-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 50px rgba(0,0,0,.1);
+}
+
+.insight-card .icon{
+    width:70px;
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:#0B1F3A;
+    color:#fff;
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+.insight-card h3{
+    color:#0B1F3A;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.insight-card p{
+    line-height:1.8;
+    color:#555;
+}
+
+/* ===========================
+   FEATURED
+=========================== */
+
+.featured{
+    background:#0B1F3A;
+    color:#fff;
+    padding:60px;
+    border-radius:30px;
+    margin-bottom:100px;
+}
+
+.featured span{
+    color:#C8A24D;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:13px;
+}
+
+.featured h2{
+    font-size:42px;
+    margin:20px 0;
+}
+
+.featured p{
+    max-width:850px;
+    line-height:1.9;
+    color:#ddd;
+}
+
+/* ===========================
+   NEWSLETTER
+=========================== */
+
+.newsletter{
+    background:#fff;
+    padding:70px;
+    border-radius:30px;
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.newsletter h2{
+    color:#0B1F3A;
+    margin-bottom:20px;
+}
+
+.newsletter p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.newsletter form{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.newsletter input{
+    width:350px;
+    padding:16px 20px;
+    border:1px solid #ddd;
+    border-radius:50px;
+    outline:none;
+}
+
+.newsletter button{
+    padding:16px 35px;
+    background:#0B1F3A;
+    color:#fff;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.newsletter button:hover{
+    background:#1E5AA8;
+}
+
+
+@media(max-width:992px){
+    .insights-hero h1{font-size:48px;}
+    .featured{padding:40px;}
+}
+
+@media(max-width:768px){
+    .insights-hero{
+        padding:90px 20px 60px;
+    }
+
+    .insights-hero h1{
+        font-size:36px;
+    }
+
+    .insights-hero p{
+        font-size:16px;
+    }
+
+    .search-box{
+        margin:40px 20px;
+    }
+
+    .insight-grid{
+        grid-template-columns:1fr;
+    }
+
+    .featured{
+        padding:30px;
+    }
+
+    .featured h2{
+        font-size:30px;
+    }
+
+    .newsletter{
+        padding:40px 25px;
+    }
+
+    .newsletter form{
+        flex-direction:column;
+    }
+
+    .newsletter input,
+    .newsletter button{
+        width:100%;
+    }
+}
+
+.back-home{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 24px;
+    border-radius:50px;
+    background:#0B1F3A;
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.back-home:hover{
+    background:#1E5AA8;
+}
+
+
+
+@media(max-width:768px){
+
+.insights-container{
+
+padding:25px;
+
+}
+
+.insights-header h2{
+
+font-size:32px;
+
+}
+
+.insight-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}

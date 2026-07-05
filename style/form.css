@@ -1,0 +1,228 @@
+/*==========================
+ QUICK ENQUIRY
+==========================*/
+
+.enquiry-section{
+
+    padding:100px 8%;
+    background:#F5F7FA;
+
+}
+
+.enquiry-container{
+
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+
+}
+
+.enquiry-info span{
+
+    color:#C8A24D;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:600;
+
+}
+
+.enquiry-info h2{
+
+    font-size:48px;
+    color:#0B1F3A;
+    margin:20px 0;
+
+}
+
+.enquiry-info p{
+
+    color:#555;
+    line-height:1.8;
+    margin-bottom:30px;
+
+}
+
+.contact-box{
+
+    margin-bottom:20px;
+    padding-left:20px;
+    border-left:4px solid #C8A24D;
+
+}
+
+.contact-box h4{
+
+    color:#0B1F3A;
+    margin-bottom:5px;
+
+}
+
+.contact-box p{
+
+    margin:0;
+    color:#666;
+
+}
+
+/*=====================*/
+
+.enquiry-form{
+
+    background:#fff;
+    padding:45px;
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.enquiry-form h3{
+
+    color:#0B1F3A;
+    margin-bottom:30px;
+
+}
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+
+    width:100%;
+    padding:16px 18px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+
+    border-color:#1E5AA8;
+    box-shadow:0 0 10px rgba(30,90,168,.15);
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+button{
+
+    width:100%;
+    padding:17px;
+    border:none;
+    border-radius:12px;
+    background:#0B1F3A;
+    color:#fff;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#1E5AA8;
+
+}
+
+button.loading{
+
+    opacity:.7;
+    cursor:not-allowed;
+
+}
+
+#responseMessage{
+
+    margin-top:20px;
+    font-weight:600;
+    color:#198754;
+
+}
+
+/*=========================
+ RESPONSIVE
+=========================*/
+
+@media(max-width:900px){
+
+.enquiry-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.enquiry-info{
+
+    text-align:center;
+
+}
+
+.contact-box{
+
+    border:none;
+    padding:0;
+
+}
+
+.enquiry-info h2{
+
+    font-size:36px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.enquiry-section{
+
+    padding:70px 20px;
+
+}
+
+.enquiry-form{
+
+    padding:30px 20px;
+
+}
+
+.enquiry-info h2{
+
+    font-size:30px;
+
+}
+
+}
+
+.back-home{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 24px;
+    border-radius:50px;
+    background:#0B1F3A;
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.back-home:hover{
+    background:#1E5AA8;
+}
