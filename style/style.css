@@ -124,8 +124,8 @@
     background: rgba(200,162,77,.14); display:flex; align-items:center; justify-content:center;
   }
   .why-visual img{ 
-     width:400px; height:500px; object-fit:cover; border-radius: var(--radius);
-     border: 5px solid #d8a434; box-shadow: 0 20px 40px -10px rgba(11,31,58,.2); 
+     width:400px; height:400px; object-fit:cover; border-radius: var(--radius);
+     border: 5px solid #d8a434; box-shadow: 0 20px 40px -10px rgba(11,31,58,.2); margin-bottom: 20px; 
      
     }
 .whatsapp-btn{
