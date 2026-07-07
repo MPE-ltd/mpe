@@ -38,6 +38,15 @@ form.addEventListener("submit", function(e){
     )
     .then(function(){
 
+        return emailjs.send(
+    "service_ktidi6t",
+    "template_fmup2nb",
+    {
+        from_name: name,
+        from_email: email,
+        service: service
+    });
+
         response.style.color = "#198754";
         response.innerHTML = "✔ Thank you! Your enquiry has been sent successfully.";
 
